@@ -1,0 +1,46 @@
+.wrapper {
+    width: 100%;
+    background-color: #18191a;
+}
+
+.inner {
+    width: 100%;
+    background-color: #18191a;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-sidebar {
+    width: 360px;
+    height: 100%;
+    background-color: #18191a;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.main-inner {
+    width: 590px;
+    background-color: #18191a;
+
+    &.Mobile {
+        width: 483.2px;
+    }
+
+    &.Tablet {
+        width: 500px;
+    }
+}
+
+.right-sidebar {
+    width: 360px;
+    height: 100%;
+}
+
+.right-sidebar-isDesktop {
+    width: 280px;
+    height: 100%;
+}

@@ -1,0 +1,88 @@
+.wrapper {
+    width: 360px;
+}
+
+.scrollbar {
+    position: fixed !important;
+}
+
+.header {
+    display: flex;
+    padding: 20px 0 4px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    padding: 0 16px;
+    flex: 1;
+    font-size: 1.7rem;
+    color: var(--color-text);
+}
+
+.header-icon {
+    margin: 0 4px;
+    color: var(--color-text);
+    width: 18px;
+    height: 18px;
+    padding: 8px;
+    transition: all linear 0.2s;
+    cursor: pointer;
+    border-radius: 50px;
+
+    &:hover {
+        background-color: var(--primary-hover);
+    }
+}
+
+.list-item {
+    height: 100%;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.item {
+    position: relative;
+}
+
+.online-bg {
+    position: absolute;
+    padding: 3px;
+    bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 50px;
+    background-color: #18191a;
+    left: 28px;
+}
+
+.online {
+    width: 7px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: #31a24c;
+}
+
+.tooltip1 {
+    bottom: -40px;
+    width: 100px;
+    left: -60px;
+}
+
+.tooltip2 {
+    width: 200px;
+    bottom: -40px;
+    left: -160px;
+}
+
+.tooltip3 {
+    width: 70px;
+    bottom: -40px;
+    left: -40px;
+}

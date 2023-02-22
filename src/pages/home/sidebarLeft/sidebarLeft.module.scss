@@ -1,0 +1,86 @@
+.wrapper {
+    width: 100%;
+    padding: 16px 0;
+}
+
+.scrollbar {
+    position: fixed !important;
+}
+
+.list-item {
+    border-bottom: 1px solid #3e4042;
+    width: 328px;
+    padding-bottom: 10px;
+    margin: 0 16px;
+    padding-top: 10px;
+
+    &:last-child {
+        border: none;
+        padding-top: 0;
+    }
+
+    &:hover .shortcut-link {
+        display: block;
+    }
+}
+
+.see-more {
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    height: 52px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    color: var(--primary-text);
+    padding: 6px;
+    border-radius: 50px;
+    background-color: #303031;
+    margin-left: 2px;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.shortcut {
+    display: flex;
+    align-items: center;
+}
+
+.shortcut-title {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #b0b3b8;
+    flex: 1;
+}
+
+.shortcut-link {
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 1.5rem;
+    margin-right: -8px;
+    color: var(--href-color);
+    cursor: pointer;
+    transition: all linear 0.1s;
+    display: none;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.footer {
+    font-size: 1.3rem;
+    color: #b0b3b8;
+    padding: 16px;
+    & a {
+        color: #b0b3b8;
+    }
+
+    & a:hover {
+        text-decoration: underline;
+    }
+}

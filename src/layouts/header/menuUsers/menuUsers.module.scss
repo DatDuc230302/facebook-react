@@ -1,0 +1,140 @@
+.wrapper {
+    background-color: #232425;
+    width: 360px;
+    padding-top: 8px;
+    min-height: 100px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    margin: 0 16px;
+    height: 102px;
+    width: 328px;
+    background-color: #2f2f2f;
+    box-shadow: 0 0 12px #242526;
+    border-radius: 8px;
+    padding: 4px 4px;
+}
+
+.header-info {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+
+    cursor: pointer;
+    transition: all linear 0.2s;
+    border-radius: 8px;
+    margin-bottom: 2px;
+
+    &:hover {
+        background-color: var(--primary-hover);
+    }
+}
+
+.header-avatar {
+    width: 36px;
+    border-radius: 50px;
+    object-fit: cover;
+    height: 36px;
+    margin-right: 10px;
+}
+
+.header-name {
+    color: var(--primary-text);
+    font-size: 1.7rem;
+}
+
+.see-all {
+    display: block;
+    padding: 6px 12px 6px 6px;
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--href-color);
+    cursor: pointer;
+    transition: all linear 0.2s;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 10px;
+    &:hover {
+        background-color: var(--primary-hover);
+    }
+
+    &:after {
+        content: '';
+        top: -5px;
+        left: 8px;
+        width: 94%;
+        height: 1px;
+        position: absolute;
+        background-color: #838383;
+    }
+}
+
+.list-item {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 8px;
+    flex-direction: column;
+}
+
+.item {
+    height: 52px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 8px;
+    transition: all linear 0.2s;
+    &:hover {
+        background-color: var(--primary-hover);
+    }
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    color: var(--primary-text);
+    padding: 8px;
+    border-radius: 50px;
+    background-color: #3a3b3c;
+    margin-right: 10px;
+}
+
+.item-title {
+    font-size: 1.5rem;
+    color: var(--primary-text);
+    font-weight: 500;
+    flex: 1;
+}
+
+.icon-more {
+    width: 24px;
+    height: 24px;
+    color: var(--color-text);
+}
+
+.footer {
+    font-size: 1.3rem;
+    color: #b0b3b8;
+    padding: 0 16px 8px 16px;
+
+    & span:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .fake {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .fake:last-child {
+        cursor: default;
+    }
+}

@@ -1,0 +1,263 @@
+.wrapper {
+    background-color: #242526;
+    width: 100%;
+    min-height: 200px;
+    margin-top: 26px;
+    border-radius: 8px;
+}
+
+.header {
+    padding: 4px 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    height: 60px;
+}
+
+.story-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    align-items: center;
+    transition: all linear 0.2s;
+    height: 50px;
+    position: relative;
+
+    &:hover {
+        background-color: var(--primary-hover);
+    }
+
+    &.active::after {
+        content: '';
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        background-color: #2e89ff;
+    }
+
+    &.active:hover {
+        background-color: transparent;
+    }
+}
+
+.title {
+    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 8px;
+
+    &.active {
+        color: #2e89ff;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 232px;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-right {
+    right: 20px;
+    top: 50%;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #242526;
+    padding: 12px;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: var(--color-text);
+
+    &:hover {
+        background-color: #666666;
+    }
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    padding: 16px 16px;
+    display: flex;
+    transition: all ease-in-out 0.2s;
+    --defaulMove: -40px;
+
+    &.move {
+        transform: translateX(calc(-40px + var(--defaulMove)));
+    }
+}
+
+.body-head {
+    margin-right: 4px;
+    position: relative;
+    height: 200px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    transition: all linear 0.2s;
+    overflow: hidden;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &:hover .bodyHead-img {
+        transform: scale(1.0001);
+    }
+}
+
+.bodyHead-img {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    object-fit: cover;
+    width: 112.5px;
+    height: 151px;
+    transition: all linear 0.2s;
+}
+
+.bodyHead-name {
+    align-items: center;
+    height: 49px;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    padding: 28px 16px 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.icon-bg {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: rgb(36, 36, 36);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-head {
+    border-radius: 50px;
+    background-color: #2e89ff;
+    padding: 4px;
+    height: 20px;
+    width: 20px;
+    color: var(--primary-text);
+}
+
+.body-item {
+    margin: 0 4px;
+    width: 112.5px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+.body-avatar {
+    position: absolute;
+    z-index: 1;
+    padding: 4px;
+    border-radius: 50px;
+    left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e89ff;
+    top: 10px;
+}
+
+.bodyAvatar-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+}
+
+.online {
+    position: absolute;
+    padding: 4px;
+    border-radius: 50px;
+    background-color: #2b2c2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+}
+
+.online-sub {
+    border-radius: 50px;
+    width: 8px;
+    height: 8px;
+    background-color: #31a24c;
+}
+
+.bodyItem-img {
+    width: 112.5px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.bodyItem-name {
+    left: 16px;
+    bottom: 8px;
+    position: absolute;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.reel-item {
+    width: 112.5px;
+    height: 200px;
+    position: relative;
+    margin: 0 4px;
+    cursor: pointer;
+
+    &:first {
+        margin-left: -4px;
+    }
+}
+
+.reel-img {
+    width: 112.5px;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.view {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.view-icon {
+    width: 12px;
+    height: 12px;
+    color: white;
+    margin-right: 4px;
+}
+
+.view-title {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: white;
+}

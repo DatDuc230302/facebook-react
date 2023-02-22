@@ -1,0 +1,38 @@
+.wrapper {
+    width: 111.6px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: all linear 0.2s;
+    justify-content: center;
+
+    &.active {
+        border-bottom: 4px solid #2374e1;
+    }
+
+    cursor: default;
+}
+
+.icon {
+    transition: all linear 0.4s;
+    color: var(--primary-text);
+    padding: 10px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &.active {
+        border-bottom: 4px solid #2374e1;
+    }
+}
+
+.active .icon {
+    transition: all linear 0.2s;
+    color: #2374e1;
+
+    &:hover {
+        background-color: transparent;
+    }
+}

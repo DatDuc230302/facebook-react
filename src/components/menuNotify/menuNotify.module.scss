@@ -1,0 +1,41 @@
+.wrapper {
+    background-color: #18191a;
+    border-radius: 8px;
+    box-shadow: 0 0 12px black;
+}
+
+.popper-notify {
+    width: 360px;
+    max-height: 688px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #18191a;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px 16px 12px 16px;
+}
+
+.header-title {
+    flex: 1;
+    font-size: 2.4rem;
+    color: var(--primary-text);
+}
+
+.header-icon {
+    padding: 8px;
+    width: 20px;
+    height: 20px;
+    color: var(--primary-text);
+    cursor: pointer;
+    border-radius: 50px;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.btn-nav {
+    margin-left: 16px;
+}

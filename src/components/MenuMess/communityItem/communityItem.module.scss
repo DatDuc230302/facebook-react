@@ -1,0 +1,66 @@
+.wrapper {
+    padding: 0 8px;
+}
+
+.header {
+    padding: 0 8px;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    color: var(--primary-text);
+}
+
+.item {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all linear 0.2s;
+
+    &.isHover:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.brand-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.info {
+    flex: 1;
+}
+
+.name {
+    color: var(--primary-text);
+    font-size: 1.5rem;
+    max-width: 130px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.content {
+    max-width: 130px;
+    display: inline-block;
+    color: #b0b3b6;
+    font-size: 1.3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.btn {
+    flex-shrink: 0;
+    padding: 0 12px;
+    border-radius: 6px;
+    background-color: #ffffff1a;
+    transition: all linear 0.1s;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}
